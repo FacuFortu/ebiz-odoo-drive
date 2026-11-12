@@ -1,0 +1,62 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Política de Privacidad – eBiz - TA&#x27;VEREN</title><style>:root{--bg:#fff;--fg:#1f2328;--muted:#59636e;--line:#d1d9e0;--accent:#714b67}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#9198a1;--line:#30363d;--accent:#c79bd0}}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0}
+main{max-width:760px;margin:0 auto;padding:40px 16px}a{color:var(--accent)}h1{line-height:1.25}h2{margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.3em}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto}th,td{border:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}code{font-size:.9em}
+footer{color:var(--muted);font-size:.9em;margin-top:3em}</style></head><body><main><h1>Política de Privacidad – eBiz - TA&#x27;VEREN</h1>
+<p><strong>Última actualización:</strong> 5 de noviembre de 2026</p>
+<p>Esta política describe cómo la aplicación <strong>eBiz - TA&#x27;VEREN</strong> (en adelante, "la Aplicación"), desarrollada por <strong>eBiz</strong> (<a href="https://ebiz.com.ar">https://ebiz.com.ar</a>), República Argentina (en adelante, "eBiz"), accede, usa, guarda y protege los datos de los usuarios de Google que la autorizan.</p>
+<h2>1. Qué hace la Aplicación</h2>
+<p>La Aplicación es un complemento desarrollado por eBiz para el sistema Odoo de <strong>TA&#x27;VEREN S. A.</strong> Cuando un usuario conecta su cuenta de Google desde Odoo y elige una carpeta de Google Drive, la Aplicación copia en esa carpeta los archivos (por ejemplo, PDF de facturas de proveedor) que el propio sistema Odoo del cliente le indica.</p>
+<p>La sincronización es en un solo sentido: de Odoo a Google Drive.</p>
+<h2>2. Datos de Google a los que accede</h2>
+<p>La Aplicación solicita únicamente estos permisos:</p>
+<table>
+<thead>
+<tr>
+<th>Permiso</th>
+<th>Para qué se usa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>openid</code> y <code>email</code> (dirección de correo de la cuenta de Google)</td>
+<td>Mostrar en Odoo qué cuenta de Google está conectada.</td>
+</tr>
+<tr>
+<td><code>drive.file</code> (archivos de Google Drive que el usuario usa con esta app)</td>
+<td>Crear y actualizar los archivos que la Aplicación sube a la carpeta elegida, y escribir en la carpeta que el usuario selecciona expresamente con el selector de Google.</td>
+</tr>
+</tbody>
+</table>
+<p>Con el permiso <code>drive.file</code>, la Aplicación <strong>no puede ver, leer, modificar ni borrar ningún otro archivo o carpeta</strong> del Google Drive del usuario. Solo accede a los archivos que ella misma creó y a la carpeta que el usuario eligió.</p>
+<p>La Aplicación no accede a Gmail, Contactos, Calendario, Fotos ni a ningún otro servicio de Google.</p>
+<h2>3. Cómo se usan los datos</h2>
+<p>Los datos obtenidos de las APIs de Google se usan <strong>exclusivamente</strong> para brindar la función descrita en el punto 1: subir y mantener actualizados en la carpeta de Drive elegida los archivos que el sistema Odoo del cliente envía.</p>
+<p>eBiz <strong>no</strong> usa estos datos para publicidad, perfiles de usuario, estudios de mercado ni para entrenar modelos de inteligencia artificial, y <strong>no</strong> los vende ni los cede a terceros.</p>
+<h2>4. Dónde se guardan</h2>
+<ul>
+<li><strong>Token de acceso de Google:</strong> se guarda únicamente en la base de datos del sistema Odoo del cliente que conectó la cuenta, con acceso restringido a los administradores de ese sistema. Se usa solo para que ese Odoo pueda subir archivos a la carpeta elegida.</li>
+<li><strong>Email de la cuenta conectada, identificador y nombre de la carpeta, e identificadores de los archivos subidos:</strong> se guardan en el mismo sistema Odoo del cliente para mostrar el estado de la sincronización.</li>
+<li><strong>Archivos:</strong> quedan en el Google Drive de la cuenta conectada, bajo el control de su titular.</li>
+</ul>
+<p>eBiz no guarda copias de los archivos ni de los tokens en servidores propios distintos del sistema Odoo del cliente.</p>
+<h2>5. Con quién se comparten</h2>
+<p>Los datos solo se transmiten entre el sistema Odoo del cliente y Google, mediante conexiones cifradas (HTTPS). No se comparten con otros terceros, salvo obligación legal.</p>
+<h2>6. Conservación y eliminación</h2>
+<p>Los datos se conservan mientras la cuenta de Google esté conectada. El usuario puede revocar el acceso en cualquier momento:</p>
+<ul>
+<li>desde Odoo: <strong>Ajustes &gt; Contabilidad &gt; Google Drive &gt; Desconectar</strong>, que elimina el token y la carpeta configurada; o</li>
+<li>desde su cuenta de Google: <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Revocar el acceso no borra los archivos que ya se subieron a Google Drive: siguen perteneciendo al titular de la cuenta, que puede conservarlos o eliminarlos.</p>
+<h2>7. Seguridad</h2>
+<p>El acceso se limita al permiso mínimo necesario (<code>drive.file</code>), las comunicaciones con Google se cifran y el token se guarda con acceso restringido a los administradores del sistema Odoo del cliente.</p>
+<h2>8. Cumplimiento de la política de Google</h2>
+<p>El uso y la transferencia a cualquier otra aplicación de la información recibida de las APIs de Google por parte de eBiz - TA&#x27;VEREN se ajustarán a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos del Usuario de los Servicios de las APIs de Google</a>, incluidos los requisitos de Uso Limitado.</p>
+<h2>9. Derechos de los usuarios</h2>
+<p>De acuerdo con la Ley 25.326 de Protección de Datos Personales de la República Argentina, el titular de los datos puede ejercer sus derechos de acceso, rectificación y supresión escribiendo a <strong>ffortunato@ebiz.com.ar</strong>. La Agencia de Acceso a la Información Pública, órgano de control de la Ley 25.326, atiende las denuncias y reclamos relacionados con el incumplimiento de las normas sobre protección de datos personales.</p>
+<h2>10. Cambios a esta política</h2>
+<p>eBiz puede actualizar esta política. La versión vigente se publica en esta página con su fecha de actualización.</p>
+<h2>11. Contacto</h2>
+<p><strong>eBiz</strong> – <strong>ffortunato@ebiz.com.ar</strong> – <a href="https://ebiz.com.ar">https://ebiz.com.ar</a></p><footer>eBiz – <a href="https://ebiz.com.ar">ebiz.com.ar</a></footer></main></body></html>
